@@ -13,19 +13,24 @@
         <h3 class="text-center">TODO Application</h3>
         <div class="center-card">
             <h3 class="text-center">TODO List</h3>
-            <div class="container">
-                
-                <li class="task-list" onclick="openDetails()">
-                    <div class="row">
-                       <input type="checkbox">
-                       <h4>Task 1</h4> 
-                       <h5>20-04-2000</h5>
-                    </div>
-                </li>
+            <div class="container" id="task-container">
                 
             </div>
+            <div class="container" id="edit-container">
+                <label for="task-title">Title</label>
+                <input type="text" id="task-title" placeholder="Enter Task Title">
+                <label for="task-deadline">Deadline</label>
+                <input type="date" id="task-deadline" placeholder="Enter Task Date">
+                <button onclick="addNewTask()">Add Task</button>
+            </div>
+        </div>
+        <div class="center-card">
+            <h3 class="text-center">Completed Tasks</h3>
+            <div class="container" id="done-task-container">
             
+            </div>
         </div>
     </div>
+    
 </body>
 </html>
