@@ -21,32 +21,47 @@ a{
     border: solid 1px #ccc;
     margin: 5px;
     padding: 3px;
+    min-height: 30px;
 }
 
 .row *{
     display:inline;
-    margin: 0px;
 }
 
 .row input{
     float: left;
     width: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    
 }
 .row h4{
     width: 80%;
-    margin-left: 3px;
-    margin-right: 3px;
+    
 }
-.row h5{
+.right-div{
     float: right;
 }
-
+.right-div *{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0px;
+}
 .task-done{
-    background-image: url('../horizontal-line.png');
-    background-size: 100% 100%; background-color: rgb(236, 232, 232);
-    color: lightslategray;
+    background-color: rgb(167, 167, 167);
+}
+.task-done h4,.task-done h5{
+    top:70%;
+    text-decoration: line-through;
 }
 
+.expired-task{
+    background-color: red;
+}
+.expired-task h5,.expired-task h4{
+    color: white;
+}
 #edit-container{
     margin: auto;
 }
@@ -71,4 +86,12 @@ a{
     background: rgb(0, 155, 245);
     color: white;
     border:1px solid lightcoral;
+}
+.delete-btn{
+    float: right;
+    background-color: rgb(253, 213, 80);
+    min-height: 30px;
+    min-width: 50px;
+    border: 0px;
+    border-radius: 3px;
 }
